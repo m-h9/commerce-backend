@@ -68,6 +68,8 @@ export default class ProductsController extends APIResponder {
       list: p.map((item) => ({
         id: item._id,
         title: item.title,
+        images:item.images,
+        price:item.price
       })),
     });
   };
