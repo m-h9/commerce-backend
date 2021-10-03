@@ -44,6 +44,7 @@ export default class ProductsController extends APIResponder {
         this.sendResponse(res,{
             id: p._id,
             title: p.title,
+            price:p.price,
             description:p.description,
             images:p.images,
             stock:p.stock,
